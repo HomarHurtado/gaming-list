@@ -1,0 +1,213 @@
+/* General adjustments */
+html {
+	height: 100%;
+	justify-content: center;
+	display: flex;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Open Sans';
+	height: 100%;
+	background-image: url('Assets/Background\ Image.png');
+	background-size: cover;
+	background-color: black;
+}
+
+/* Banner logo */
+.MyBanner {
+	filter: invert(82%) sepia(30%) saturate(703%) hue-rotate(114deg)
+		brightness(107%) contrast(98%);
+	max-width: 100px;
+	height: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+/* Navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #1f2833;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16.4px;
+	text-decoration: none;
+	font-size: 17px;
+	transition: 0.3s ease;
+}
+
+.topnav a:hover {
+	background-color: white;
+	color: black;
+	transition: 0.3s ease;
+}
+
+.topnav a.active {
+	background-color: #45a29e;
+	color: white;
+}
+
+/* Header */
+.main-header {
+	text-align: center;
+}
+
+/* Text adjustments */
+h2 {
+	padding-top: 20px;
+	color: #66fcf1;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+/* Text below images */
+.myDiv {
+	height: auto;
+	width: 580px;
+	background: #1f2833;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+/* Text at the top of every section */
+.myDiv2 {
+	height: auto;
+	width: 580px;
+	background: black;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+	font-size: larger;
+}
+
+/* Image format and button overlay */
+.MyIMG {
+	height: auto;
+	max-width: 590px;
+	border: 5px solid #c5c6c7;
+	opacity: 1;
+	display: block;
+	transition: 0.3s ease;
+	backface-visibility: hidden;
+}
+
+.middle {
+	transition: 0.3s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	width: fit-content;
+}
+
+.container {
+	position: relative;
+	width: 50%;
+}
+
+.container:hover .MyIMG {
+	opacity: 0.3;
+}
+
+.container:hover .middle {
+	opacity: 1;
+}
+
+.text {
+	background-color: #66fcf1;
+	color: black;
+	font-size: 18px;
+	padding: 12px 20px;
+}
+
+/* YouTube Video Slideshow */
+.slidershow {
+	width: 600px;
+	height: 380px;
+	overflow: hidden;
+	position: relative;
+}
+
+.navigation {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	background-color: #1f2833;
+}
+.bar {
+	width: 50px;
+	height: 10px;
+	border: 2px solid #fff;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.bar:hover {
+	background: #66fcf1;
+}
+
+input[name='r'] {
+	position: absolute;
+	visibility: hidden;
+}
+
+.slides {
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+
+.slide {
+	width: 20%;
+	transition: 0.4s;
+}
+.slide iframe {
+	width: 100%;
+	height: 338px;
+}
+
+#r2:checked ~ .s1 {
+	margin-left: 0%;
+}
+#r3:checked ~ .s1 {
+	margin-left: -20%;
+}
+#r4:checked ~ .s1 {
+	margin-left: -40%;
+}
+#r5:checked ~ .s1 {
+	margin-left: -60%;
+}
+
+/* YouTube Videos */
+iframe {
+	border: none;
+}
+
+/* Footer text and background */
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: #45a29e;
+	color: white;
+	margin-top: 70px;
+	margin-bottom: 0%;
+}
